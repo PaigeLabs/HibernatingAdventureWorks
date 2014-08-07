@@ -1,0 +1,19 @@
+﻿@model System.Collections.Generic.ICollection<HibernatingCropInsurance.Models.Customer>
+
+@{
+    ViewBag.Title = "All Customers";
+}
+
+<h2>Customers</h2>
+
+<ul>
+    @foreach (var customer in Model)
+    {
+        <li>
+            <a href="/customer/details/@customer.CustomerID">
+                @customer.FirstName
+                @customer.LastName
+            </a>
+        </li>
+    }
+</ul>

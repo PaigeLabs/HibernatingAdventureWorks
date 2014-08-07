@@ -1,0 +1,13 @@
+﻿@model HibernatingCropInsurance.Models.Customer
+
+@{
+    ViewBag.Title = "Customer Detail";
+}
+
+<h2>@Model.FirstName @Model.LastName</h2>
+<ul>
+    <li>@Model.CompanyName</li>
+    <li>@Model.EmailAddress</li>
+    <li>@Model.Phone</li>
+    <li>@Model.CustomerAddresses.Count()</li>
+</ul>
